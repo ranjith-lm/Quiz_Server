@@ -23,7 +23,7 @@ MongoClient.connect(mongoUrl, (err, client) => {
   }
   console.log('Connected to MongoDB successfully');
 
-  const db = client.db(dbName);
+  const db = client.db();
   const collection = db.collection(collectionName);
 
   // API endpoint to get all documents
