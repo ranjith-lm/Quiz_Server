@@ -76,8 +76,8 @@ MongoClient.connect(uri, {
 				const transporter = nodemailer.createTransport({
 					service: 'gmail',
 					auth: {
-						user: 's.sarankumar7196@gmail.com',
-						pass: 'zwso ymmv qxsa xqko',
+						user: 'quizmailsender001@gmail.com',
+						pass: 'spmh jobl icxn kylu',
 					},
 					secure: true, // Use SSL/TLS
 					tls: {
@@ -215,7 +215,7 @@ MongoClient.connect(uri, {
 
 				// Define the email options
 				const mailOptions = {
-					from: 's.sarankumar7196@gmail.com',
+					from: 'quizmailsender001@gmail.com',
 					to: ['ranjithraja2696@gmail.com','thiyaneshoff@gmail.com'],
 					subject: 'Quiz Result',
 					html: dynamicHTMLContent
