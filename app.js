@@ -213,10 +213,14 @@ MongoClient.connect(uri, {
 					</body>
 				  </html>`;
 
+				  let emailList = [];
+
+				  emailList.push(`${newData.email}`)
+
 				// Define the email options
 				const mailOptions = {
 					from: 'quizmailsender001@gmail.com',
-					to: ['ranjithraja2696@gmail.com','thiyaneshoff@gmail.com'],
+					to: emailList,
 					subject: 'Quiz Result',
 					html: dynamicHTMLContent
 				};
